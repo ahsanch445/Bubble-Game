@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 236, 236);
+}
+.home{
+    
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ADD8E6; 
+    height: 92%;
+    width: 90%;
+}
+.mainnav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+    height: 70px;
+width: 100%;
+padding: 7px;
+background-color: rgb(224, 104, 0);
+
+
+}
+.topbtn{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+
+}
+.cricle{
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 80px;
+    font-weight: 700;
+    background-color: rgb(246, 246, 246);
+}
+.mainbuble{
+  
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  display: flex;
+    height: calc(100% - 100px);
+    width: 100%;
+}
+.btn{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+   border-radius: 50%;
+   font-weight: 900;
+   color: #FFFFFF;
+   background-color: #336699;;
+}
+.game-over-text {
+    color: #336699; /* Text color */
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    height: 100%; /* Ensure the height fills the parent element */
+  }
+
+
+  .container {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+  
+   justify-content: center;
+
+   width: 100%;
+  }
+  
+
+ 
+
+
+
+
+
+  #customButton {
+   display: none;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    background-color:#336699; /* Button background color */
+    color: #e2e7e8; /* Button text color */
+    /* Other button styles */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .game{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
