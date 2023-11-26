@@ -17,7 +17,7 @@ makebulbe()
 function runtimer() {
     var timer = 60;
     let clear = setInterval(function () {
-        if (timer > 50) {
+        if (timer > 0) {
             timer--;
             document.querySelector("#minus").innerHTML = timer;
         } else {
