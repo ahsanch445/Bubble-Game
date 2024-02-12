@@ -15,7 +15,7 @@ makebulbe()
 
 
 function runtimer() {
-    var timer = 6;
+    var timer = 60;
     let clear = setInterval(function () {
         if (timer > 0) {
             timer--;
