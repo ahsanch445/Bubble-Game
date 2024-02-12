@@ -4,7 +4,7 @@ function makebulbe() {
     
     var cid = document.querySelector(".btn")
     let cul = ""
-    for (var i = 1; i < 106; i++) {
+    for (var i = 1; i < 121; i++) {
         var rn = Math.floor(Math.random() * 10)
         cul += `<buble class="btn">${rn}</buble>`
     }
@@ -15,18 +15,19 @@ makebulbe()
 
 
 function runtimer() {
-    var timer = 60;
+    var timer = 6;
     let clear = setInterval(function () {
         if (timer > 0) {
             timer--;
             document.querySelector("#minus").innerHTML = timer;
+        
         } else {
             var homeElement = document.querySelector(".mainbuble");
             var btn = document.querySelector("#customButton")
           btn.style.display = "block"
-      
+          alert("Game Over")
           homeElement.innerHTML = btn
-        homeElement.innerHTML =`<span class="game" ><h1>Game Over</h1></span>`;
+        homeElement.innerHTML =`<span class="game" ><h1> Your Score is ${score}</h1></span>`;
        
         
        
@@ -77,6 +78,7 @@ document.querySelector("#customButton").addEventListener("click",function(e){
    hitval()
    runtimer()
      document.querySelector("#customButton ").style.display="none"
+  
    
 })
 
